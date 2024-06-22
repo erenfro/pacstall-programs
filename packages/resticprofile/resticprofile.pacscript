@@ -23,6 +23,7 @@ build() {
 
     LC_ALL=C _build_date="$(date)"
 
+    go mod download
     go build -o resticprofile -v -ldflags "-X 'main.date=${_build_date}' -X 'main.builtBy=pacstall'"
 }
 
