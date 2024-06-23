@@ -5,12 +5,14 @@ arch=("amd64")
 url="https://github.com/creativeprojects/resticprofile"
 license=('GPL-3.0-only')
 depends=("restic")
-makedepends=('golang-go' 'git')
+makedepends=('golang-go>=1.21' 'git')
 options=(!lto)
 maintainer=("Eric Renfro <psi-jack@linux-help.org>")
 source=("https://github.com/creativeprojects/resticprofile/archive/refs/tags/v${pkgver}.tar.gz")
 sha256sums=('2aba9eedc4150ba85792396479c94a092791a4c371bd86ccc979cdace29eb6a7')
 external_connection='true'
+
+prepare
 
 build() {
     cd "${pkgname}-${pkgver}"
