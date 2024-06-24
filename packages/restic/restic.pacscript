@@ -10,7 +10,6 @@ checkdepends=('fuse2')
 optdepends=('fuse2: mount archive')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/restic/restic/archive/v${pkgver}.tar.gz")
 sha512sums=('9f28f90466a30a3c1f32cd1951dddaa22d30ece8b1c18da1a907cc1dd0f98065c25529e855b56fc3d62801b052371d9fe117cd26f17e15276f6a9a309416e914')
-b2sums=('f8dff867ee5e0f9c16b3b22b7db7bfede6d38565558c99632e7239e9c6a19602cd7ea5c7761ac5d0103d6e07c68c0d20c64184317022799f19b9ac814c4b6ff4')
 
 build(){
   cd "${pkgname}-${pkgver}"
